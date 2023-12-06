@@ -1,0 +1,134 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #c9c8c8;
+}
+
+.hero {
+  background-color: rgb(88, 15, 161);
+  color: #fff;
+  text-align: center;
+  padding: 50px 30px;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.hero:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: linear-gradient(to left, #af0fd3, rgb(88, 15, 161));
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: linear-gradient(to right, #af0fd3, rgb(88, 15, 161));
+}
+
+.hero h1 {
+  font-weight: normal;
+  font-size: 6rem;
+  margin: 0;
+}
+
+.hero h2 {
+  font-weight: normal;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.filter-nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.filter-nav a:hover {
+  background-color: rgb(88, 15, 161);
+  color: #fff;
+  box-shadow: 8px 8px 2px rgba(0, 0, 0, 0.112);
+  transform: scale(1.2);
+  transition: 0.3s ease-in-out;
+  border-radius: 0.7rem;
+}
+
+.filter-nav a {
+  text-decoration: none;
+  padding: 0.5rem;
+  border: 1px solid rgba(114, 24, 69, 0.583);
+  color: rgb(88, 15, 161);
+  margin: 5px;
+  border-radius: 0.5rem;
+  display: inline-block;
+}
+
+.animals {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.animal-card {
+  display: grid;
+  margin-bottom: 3rem;
+  grid-template-columns: 200px 1fr;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 20px 20px 5px rgba(0, 0, 0, 0.112);
+  overflow: hidden;
+}
+
+.animal-card:hover img {
+  transform: rotate(20deg) scale(1.3);
+  overflow: hidden;
+}
+
+.animal-picture {
+  overflow: hidden;
+}
+
+.animal-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s ease-in-out;
+}
+.animal-text {
+  padding: 20px 25px;
+}
+
+.animal-text h3 {
+  font-size: 2rem;
+  font-weight: normal;
+  margin: 0;
+}
+.animal-text small {
+  color: #a09595;
+}
+
+.primary-btn {
+  background: linear-gradient(#b50fd3, rgb(88, 15, 161));
+  text-decoration: none;
+  color: #fff;
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+  display: inline-block;
+}
+
+.primary-btn:hover {
+  background: linear-gradient(#a40ebf, rgb(6, 2, 10));
+  box-shadow: 8px 8px 2px rgba(0, 0, 0, 0.112);
+  transform: scale(1.2);
+}
